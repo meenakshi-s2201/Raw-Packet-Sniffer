@@ -3,7 +3,7 @@
 
 ## ⚙️ Requirements
     - Python 3.x
-    - Root/Admin privileges (for raw socket access)
+    - Root privileges (for raw socket access)
     - Linux-based OS (uses AF_PACKET which is specific to Linux)
 
 ## ✨ Features
