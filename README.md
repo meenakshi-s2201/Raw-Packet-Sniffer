@@ -22,5 +22,5 @@
 ### Run the sniffer (requires sudo):
     sudo python3 packet_sniffer.py
 
-#### Stop the program with CTRL + C.
+Stop the program with CTRL + C.
 
