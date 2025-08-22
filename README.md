@@ -16,8 +16,8 @@
 ## 🚀 Installation & Usage
 
 ### Clone the repository:
-    git clone https://github.com/your-username/raw-packet-sniffer.git
-    cd raw-packet-sniffer
+    git clone https://github.com/meenakshi-s2201/Raw-Packet-Sniffer
+    cd Raw-Packet-Sniffer
 
 ### Run the sniffer (requires sudo):
     sudo python3 packet_sniffer.py
