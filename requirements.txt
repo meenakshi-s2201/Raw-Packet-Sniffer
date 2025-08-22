@@ -1,4 +1,4 @@
-This project uses only Python standard library modules. 
+#This project uses only Python standard library modules. 
 No external dependencies are required. 
 
 Built-in modules used: 
