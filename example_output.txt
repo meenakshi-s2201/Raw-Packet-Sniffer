@@ -1,0 +1,55 @@
+Ethernet Frame:
+	 - Destination: 08:00:27:12:34:56, Source: 52:54:00:AB:CD:EF, Protocol: 8
+	 - IPv4 Packet:
+		 - Version: 4, Header Length: 20, TTL: 64
+		 - Source: 192.168.1.5, Target: 142.250.182.14
+	 - TCP Segment:
+		 - Source Port: 54321, Destination Port: 80
+		 - Sequence: 123456789, Acknowledgement: 987654321
+		 - Flags:
+			 - URG: 0, ACK: 1, PSH: 1, RST: 0, SYN: 0, FIN: 0
+		 - Data:
+			 \x47\x45\x54\x20\x2f\x20\x48\x54\x54\x50\x2f\x31\x2e\x31\x0d\x0a
+
+Ethernet Frame:
+	 - Destination: 52:54:00:AB:CD:EF, Source: 08:00:27:12:34:56, Protocol: 8
+	 - IPv4 Packet:
+		 - Version: 4, Header Length: 20, TTL: 128
+		 - Source: 142.250.182.14, Target: 192.168.1.5
+	 - TCP Segment:
+		 - Source Port: 80, Destination Port: 54321
+		 - Sequence: 987654321, Acknowledgement: 123456790
+		 - Flags:
+			 - URG: 0, ACK: 1, PSH: 1, RST: 0, SYN: 0, FIN: 0
+		 - Data:
+			 \x48\x54\x54\x50\x2f\x31\x2e\x31\x20\x32\x30\x30\x20\x4f\x4b\x0d\x0a
+
+Ethernet Frame:
+	 - Destination: FF:FF:FF:FF:FF:FF, Source: 08:00:27:12:34:56, Protocol: 8
+	 - IPv4 Packet:
+		 - Version: 4, Header Length: 20, TTL: 128
+		 - Source: 192.168.1.5, Target: 8.8.8.8
+	 - ICMP Packet:
+		 - Type: 8, Code: 0, Checksum: 1
+		 - Data:
+			 \x61\x62\x63\x64\x65\x66\x67\x68\x69\x6a\x6b\x6c\x6d\x6e\x6f\x70
+
+Ethernet Frame:
+	 - Destination: 08:00:27:12:34:56, Source: 52:54:00:11:22:33, Protocol: 8
+	 - IPv4 Packet:
+		 - Version: 4, Header Length: 20, TTL: 64
+		 - Source: 192.168.1.20, Target: 192.168.1.5
+	 - UDP Segment:
+		 - Source Port: 5353, Destination Port: 5353, Length: 64
+		 - Data:
+			 \x00\x00\x84\x00\x00\x01\x00\x00\x00\x00\x00\x00\x09\x5f\x5f\x64
+
+Ethernet Frame:
+	 - Destination: 08:00:27:12:34:56, Source: 52:54:00:44:55:66, Protocol: 8
+	 - IPv4 Packet:
+		 - Version: 4, Header Length: 20, TTL: 255
+		 - Source: 192.168.1.30, Target: 224.0.0.251
+	 - UDP Segment:
+		 - Source Port: 5353, Destination Port: 5353, Length: 48
+		 - Data:
+			 \x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x07\x5f\x69\x70
